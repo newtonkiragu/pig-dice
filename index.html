@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <title>Pig Dice <img src="/home/newton/Desktop/Pig Dice/images/psd-red-dice-icon_30-1984.jpg" alt=""></title>
+  </head>
+
+  <body>
+    <ul class="navbar fadeInDown animated">
+      <li class="li"><a href="index.html" class="link">HOME</a></li>
+      <li class="li"><a href="" class="link">SOCIAL</a></li>
+      <li class="li"><a data-toggle="modal" href="#myModal">ABOUT</a></li>
+      <li class="li"><a href="" class="link">CONTACT US</a></li>
+    </ul>
+
+    <div id="myModal" class="modal fade animated" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>PIG DICE</h3>
+          </div>
+          <!--end header-->
+          <div class="modal-body">
+            <h1>About Pig Dice</h1>
+            <p>Pig is a simple dice game first described in print by John Scarne in 1945. As with many games of folk origin, Pig is played with many rule variations.</p><br>
+            <p>In My Pig Dice, the game is played like this:</p>
+            <ul>
+              <li>The game is played between two people. After inputting your names, a page will be diaplayed. The player in Player1 goes first.</li>
+              <li>The player clicks on <strong>Roll</strong>. The app then gives you a random number on the side of the dice. You can then either choose to <strong>hold</strong> or <strong>Roll</strong>again.</li>
+              <li>Incase you click on hold, the app takes the current value and adds it to your points.</li>
+              <li>However, if you were to click on roll, and your dice ends up at 1, the pints that you had got will be zeroed and till will be the next player's turn</li>
+            </ul>
+            <p>You can also find more about this app on <strong>Github</strong>at <a href="https://github.com/">Github</a></p>
+
+          </div>
+          <!--end modal body-->
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Done</button>
+          </div>
+          <!--end of footer-->
+        </div>
+        <!--end  content-->
+      </div>
+      <!--end dialog-->
+    </div>
+    <!--end of modal-->
+
+    <!-- IDEA: start form -->
+    <div class="start-menu container fadeInDown animated">
+      <div class="jumbotron">
+        <h1>Pig Dice!!!!</h1>
+        <p>Please input your name below to proceed!!!</p>
+        <form id="player-1">
+          <div class="form-group">
+            <label for="player1Name">Player 1 Name:</label>
+            <input required class="player1Name form-control" type="text">
+          </div>
+        </form>
+        <form id="player-2">
+          <div class="form-group">
+            <label for="player2Name">Player 2 Name:</label>
+            <input required class="player2Name form-control" type="text">
+          </div>
+        </form>
+        <button id="start" class="btn-info btn">Start</button>
+      </div>
+      <!-- IDEA: end of jumbotron -->
+    </div>
+    <!-- IDEA: end of start menu -->
+
+    <div class="player-console container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Player 1: <span id = "player1Name"><span></h2>
+          <button id="player1-roll" class="btn-success btn">Roll</button>
+          <button id="player1-hold" class="btn-success btn">Hold</button>
+          <h2>Dice Roll: <span id="die-roll-1"></span></h2>
+          <p>Round Total: <span id="round-total-1"></span></p>
+          <p>Total Score: <span id="total-score-1"></span></p>
+        </div>
+
+        <div class="col-md-6">
+          <h2>Player 2: <span id = "player2Name"><span></h2>
+          <button id="player2-roll" class="btn-success btn">Roll</button>
+          <button id="player2-hold" class="btn-success btn">Hold</button>
+          <h2>Dice Roll: <span id="die-roll-2"></span></h2>
+          <p>Round Total: <span id="round-total-2"></span></p>
+          <p>Total Score: <span id="total-score-2"></span></p>
+        </div>
+        <button id="new-game" class="btn-success btn">NEW GAME</button>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <p>(c)2016 Karanu Newton</p>
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,36 @@
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a:link, a:visited {
+  display: block;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+  width: 150px;
+  text-align: center;
+  padding: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  background-color: lightgrey;
+}
+
+.li {
+  float: left;
+}
+
+body {
+  background-image: url("/home/newton/Desktop/Pig Dice/images/3082269-dice-with-different-emotions-on-faces-on-white-isolated-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.player-console {
+  display: none;
+}
