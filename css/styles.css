@@ -26,11 +26,20 @@ a:hover, a:active {
 }
 
 body {
-  background-image: url("/home/newton/Desktop/Pig Dice/images/3082269-dice-with-different-emotions-on-faces-on-white-isolated-background.jpg");
+  background-image: image("images/030.gif");
   background-repeat: no-repeat;
   background-size: cover;
+  /*background-color: lightgrey;*/
 }
 
-.actualGame {
+.player-console {
   display: none;
+}
+
+body {
+  font-family: 'Ranga', cursive;
+}
+
+.image {
+  text-align: center;
 }

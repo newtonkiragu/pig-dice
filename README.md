@@ -17,5 +17,6 @@ This Project is called Pig Dice and is played between two people. The goal is to
 
 ### Github
 My app is hosted by Github and can be found for free. to get it, checkout [GitHub] (http://newtonkiragu/github)
+
 ##SETUP
 The folder can be accessed by downloading it and opening the main file using the default browser.

@@ -5,7 +5,7 @@ var player2 = "";
 var throwdice = function() {
   return Math.floor(6 * Math.random()) + 1;
 }
-// setting turns to 0
+
 function Player(turn) {
   this.roll = 0;
   this.tempscore = 0;
@@ -33,26 +33,35 @@ Player.prototype.hold = function() {
   alert(this.playerName + ", your turn is over, pass the mouse!");
 }
 
-// winner check
+// // changing turn
+// Player.prototype.changeturn = function () {
+//   if (this.roll ===1) {
+//     this.turn = false;
+//   } else {
+//     this.turn = true;
+//   }
+// }
+// check for 100
 Player.prototype.winnerCheck = function() {
   if (this.totalscore >= 100) {
     alert(this.playerName + " You are the winner!");
   }
 }
-// setting everything to 0 for new game
+
 Player.prototype.newGame = function() {
+  //debugger;
   this.roll = 0;
   this.tempscore = 0;
   this.totalscore = 0;
   this.playerName = "";
 }
-// setting names to 0 fro new game
+
 var clearValues = function() {
   $(".player1Name").val("");
   $(".player2Name").val("");
 }
 
-// User Interface logic
+// User Interface
 $(document).ready(function() {
 
   $("button#start").click(function(event) {
@@ -85,7 +94,7 @@ $(document).ready(function() {
 
     $(".start-menu").show();
   });
-  // on click of roll
+
   $("button#player1-roll").click(function(event) {
     player1.roll = throwdice();
     $("#die-roll-1").text(player1.roll);
@@ -99,7 +108,7 @@ $(document).ready(function() {
     player2.rollone();
     $("#round-total-2").text(player2.tempscore);
   });
-  // to save the data when someone clicks 
+
   $("button#player1-hold").click(function(event) {
     player1.hold();
     $("#total-score-1").text(player1.totalscore);
